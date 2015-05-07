@@ -1,0 +1,15 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a, address, em, img, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, thead, tbody, tfoot, tr, th, td { border: 0; font-family: inherit; font-size: 100%; margin: 0; outline: 0; padding: 0; }
+:focus { outline: 0; }
+ol, ul { list-style: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+body { background: #FFF; color: #515151; font: normal normal 12px Arial, Tahoma,Verdana,  Helvetica, sans-serif; text-align: center; }
+input, select, textarea { color: #515151; font: normal normal 1em  Arial, Tahoma, Arial, Helvetica, sans-serif; }
+a:link, a:visited { color: #00b4ff; text-decoration: none; }
+a:hover { color: #515151; text-decoration: underline; }
+p{ line-height: 18px;}
+.blockItem { background: url(../images/bg-blockItem.jpg) no-repeat; width: 225px; height: 160px; text-align: center; float:left; margin-right: 12px;position: relative; }
+.blockItem h3 { font-size: 16px; padding: 10px 0 5px; }
+.blockItem .img { padding-top: 8px;  }
+

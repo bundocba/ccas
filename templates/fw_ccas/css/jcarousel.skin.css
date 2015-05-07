@@ -1,0 +1,54 @@
+.jcarousel-container {
+	margin: 5px;
+	border-top: 1px solid #999;
+	
+}
+.jcarousel-container-vertical {
+    padding: 2px 25px;
+	width: 200px;
+}
+.jcarousel-clip-vertical {
+    width: 140px;
+	height: 400px;
+}
+
+.pika-textnav { display: none; }
+.jcarousel-item-vertical {
+    margin-right: 7px;
+}
+
+.jcarousel-next-vertical,
+.jcarousel-prev-vertical {
+    cursor: pointer;
+    height: 32px;
+    position: absolute;
+    top: 35px;
+    width: 18px; cursor: pointer;
+}
+.jcarousel-next-vertical {
+    background: url(../images/ico-arrow-next.png) no-repeat;
+    right: 0px; 
+}
+.jcarousel-prev-vertical {
+    background: url(../images/ico-arrow-prev.png) no-repeat;
+    left: 0px; 
+}
+.jcarousel-next-vertical:hover,
+.jcarousel-prev-vertical:hover {
+    background-position: -20px 0;
+}
+.jcarousel-next-vertical:active,
+.jcarousel-prev-vertical:active {
+    background-position: -60px 0;
+}
+
+.jcarousel-next-disabled-vertical,
+.jcarousel-next-disabled-vertical:hover,
+.jcarousel-next-disabled-vertical:active,
+.jcarousel-prev-disabled-vertical,
+.jcarousel-prev-disabled-vertical:hover,
+.jcarousel-prev-disabled-vertical:active {
+    cursor: pointer;
+    background-position: -60px 0;
+}
+

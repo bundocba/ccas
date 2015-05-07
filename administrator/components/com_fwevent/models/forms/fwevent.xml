@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: helloworld.xml 51 2010-11-22 01:33:21Z chdemko $ -->
+<form>
+	<fieldset>
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="title"
+			type="text"
+			label="COM_FWEVENT_FIELD_TITLE_LABEL"
+			description="COM_FWEVENT_FIELD_TITLE_DESC"
+			size="40"
+			class="inputbox"
+			default=""						required="true" 
+		/>
+
+		<field			name="venue"			type="textarea"			label="Venue"			description="Venue"			size="40"	filter="raw"		class="inputbox"			default=""		/>		
+
+		<field name="price1" type="text" label="Price for CCAS Member"            size="40" filter="integer" />		
+		<field name="price2" type="text" label="Price for Non-CCAS Member"            size="40" filter="integer" />		
+		<field name="image" type="media" directory="images"
+                hide_none="1" label="Image"
+                size="40"
+                required="true" />
+		<field name="start_date" type="calendar" label="Start date"			 class="inputbox" size="22"			format="%Y-%m-%d %H:%M:%S" filter="user_utc"  required="true"/>					
+		<field name="end_date" type="calendar" label="End date"			 class="inputbox" size="22"			format="%Y-%m-%d %H:%M:%S" filter="user_utc"  required="true"/> 
+<!--		<field name="file" type="text" readonly="true" label="File" class="readonly"                size="30" /> -->
+		<field name="published" type="list"            label="JSTATUS"            class="inputbox" size="1" default="1" >  
+			<option value="1">JPUBLISHED</option>           
+			<option value="0">JUNPUBLISHED</option>    
+			<option value="-2">JTRASHED</option>     
+		</field> 
+		
+        <field name="created_date" type="calendar" label="Created date"			 class="inputbox" size="22"			format="%Y-%m-%d %H:%M:%S" filter="user_utc" />		
+			
+        <field name="description" type="editor" class="inputbox"			label="Description" 			filter="raw" buttons="true" /> 
+		
+	</fieldset>	
+</form>

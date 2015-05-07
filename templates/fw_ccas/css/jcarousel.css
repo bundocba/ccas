@@ -1,0 +1,30 @@
+.jcarousel-skin-pika { float: left; }
+
+.jcarousel-container {
+    position: relative;
+}
+.jcarousel-clip {
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+.jcarousel-list {
+    left: 0;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    z-index: 1;
+}
+.jcarousel-list li,
+.jcarousel-item {
+    width: 140px; height:85px; margin: 10px 0 0 17px; padding: 0; overflow: hidden;
+		float: left; list-style-type: none;padding: 3px; margin: 0 1px; background: #fafafa; border: 1px solid #e5e5e5; cursor: pointer;
+}
+.jcarousel-list li img {
+	
+}
+.jcarousel-next,
+.jcarousel-prev {
+    display: none;
+    z-index: 3;
+}

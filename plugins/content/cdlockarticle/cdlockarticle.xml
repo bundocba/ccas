@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="2.5.0" type="plugin" group="content" method="upgrade">
+	<name>plg_content_cdlockarticle</name>
+  	<author>Daniel Rataj</author>
+  	<creationDate>May 2th, 2013</creationDate>
+  	<copyright>(C) 2007 - 2013 Great Joomla! All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL 3</license>
+  	<authorEmail>info@greatjoomla.com</authorEmail>
+  	<authorUrl>www.greatjoomla.com</authorUrl>
+	<version>2.5.x.2.0.5</version>
+	<description>PLG_CONTENT_CDLOCKARTICLE_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="cdlockarticle">cdlockarticle.php</filename>
+		<filename>index.html</filename>
+		<filename>license-gpl.txt</filename>
+        <filename>installation.script.php</filename>
+        <folder>context</folder>
+        <folder>fields</folder>
+        <folder>install</folder>
+		<folder>language</folder>
+		<folder>table</folder>
+		<folder>tmpl</folder>
+	</files>
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">install/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">install/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <update>
+        <schemas>
+            <schemapath type="mysql">install/updates/mysql</schemapath>
+        </schemas>
+    </update>
+    <scriptfile>installation.script.php</scriptfile>
+	<languages>
+    	<language tag="en-GB">language/en-GB/en-GB.plg_content_cdlockarticle.ini</language>
+    	<language tag="en-GB">language/en-GB/en-GB.plg_content_cdlockarticle.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/cdscriptegrator/fields">
+			<fieldset
+			name="layout"
+			label="PLG_CONTENT_CDLOCKARTICLE_FIELDSET_LAYOUT"
+			addfieldpath="/plugins/content/cdlockarticle/fields"
+			>
+                <field
+                    type="checkscriptegrator"
+                    title="PLG_CONTENT_CDLOCKARTICLE_ERROR_ENABLE_SCRIPTEGRATOR"
+                    />
+				<field
+					name="uitheme"
+					type="uithemecombobox"
+					default="ui-lightness"
+					label="PLG_CONTENT_CDLOCKARTICLE_FIELD_UITHEME_LABEL"
+					description="PLG_CONTENT_CDLOCKARTICLE_FIELD_UITHEME_DESCRIPTION"
+				/>
+                <field
+                    name="layout"
+                    type="folderlist"
+                    directory="plugins/content/cdlockarticle/tmpl"
+                    hide_default="true"
+                    hide_none="true"
+                    default="default"
+                    label="PLG_CONTENT_CDLOCKARTICLE_FIELD_LAYOUT_LABEL"
+                    description="PLG_CONTENT_CDLOCKARTICLE_FIELD_LAYOUT_DESCRIPTION" />
+			</fieldset>
+			<fieldset name="permissions" label="PLG_CONTENT_CDLOCKARTICLE_FIELDSET_PERMISSIONS">
+				<field
+					name="permission_to_manage"
+					type="usergroup"
+					default=""
+					label="PLG_CONTENT_CDLOCKARTICLE_FIELD_LABEL_PERMISSION_TO_MANAGE"
+					description="PLG_CONTENT_CDLOCKARTICLE_FIELD_DESCRIPTION_PERMISSION_TO_MANAGE"
+					multiple="true"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</install>

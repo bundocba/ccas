@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+	
+	<name>fw_ccas</name>
+	<creationDate>17 Sept 2012</creationDate>
+	<author>Hong Trang</author>
+	<authorEmail>hongtrang@futureworkz.com</authorEmail>
+	<authorUrl>http://www.futureworkz.com</authorUrl>
+	<copyright>Copyright (C) 2005 - 2011 Open Source Matters, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>2.5.0</version>
+	<description>CCAS Templates</description>
+
+	<files>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>scripts</folder>
+		<folder>html</folder>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+	</files>
+
+	<positions>
+		<position>banner</position>
+		<position>debug</position>
+		<position>copyright</position>
+		<position>search</position>
+		<position>topmenu</position>
+		<position>left</position>
+		<position>right</position>
+		<position>title</position>
+		<position>footer-a</position>
+		<position>footer-b</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>social</position>
+		<position>logo</position>
+		<position>login</position>
+	</positions>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				
+				<field name="html5" type="list" default="0"
+					label="html version"
+					description="Choose between xhtml or html5"
+					filter="int"
+				>
+					<option value="0">xhtml</option>
+					<option value="1">html5</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

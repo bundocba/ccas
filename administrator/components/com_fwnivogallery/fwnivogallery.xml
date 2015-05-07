@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="2.5.0" method="upgrade">
+ 
+    <name>FW NIVO GALLERY</name>
+    <!-- The following elements are optional and free of formatting constraints -->
+    <creationDate>July 2012</creationDate>
+    <author></author>
+    <authorEmail>john.doe@example.org</authorEmail>
+    <authorUrl>http://www.example.org</authorUrl>
+    <copyright>Copyright Info</copyright>
+    <license>License Info</license>
+    <!--  The version string is recorded in the components table -->
+    <version>0.0.1</version>
+    <!-- The description is optional and defaults to the name -->
+    <description>Description of the Nivo Gallery component ...</description>
+ 
+    <administration>
+        <files folder="admin">
+            <!-- Admin Main File Copy Section -->
+            <filename>index.html</filename>
+            <filename>fwnivogallery.php</filename>
+			<filename>controller.php</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>tables</folder>
+			<folder>helpers</folder>
+        </files>
+        
+        <languages folder="admin/language">
+            <lang tag="en-GB">en-GB.com_fwnivogallery.ini</lang>
+            <lang tag="en-GB">en-GB.com_fwnivogallery.sys.ini</lang>
+        </languages>
+        
+        <menu link="index.php?option=com_fwcarservicing">COM_NIVOGALLERY</menu>
+    </administration>
+ 
+</install>
